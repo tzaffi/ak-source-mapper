@@ -72,5 +72,8 @@
       }
     ]
   },
+  "python.testing.pytestArgs": [
+    "smart_contracts"
+  ],
   
 }

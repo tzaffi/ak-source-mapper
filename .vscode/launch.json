@@ -6,7 +6,8 @@
       "type": "python",
       "request": "launch",
       "module": "smart_contracts",
-      "cwd": "${workspaceFolder}"
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
     }
   ]
 }

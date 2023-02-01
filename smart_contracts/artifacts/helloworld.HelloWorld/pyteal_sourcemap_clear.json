@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "sources": [
+        "smart_contracts/lab.py"
+    ],
+    "names": [],
+    "mappings": "AA4BU;AAAA;AAAA",
+    "file": "clear.teal",
+    "sourceRoot": "/Users/zeph/algokits/source-mapper/"
+}

@@ -1,0 +1,4 @@
+// GENERATED TEAL    //    PYTEAL PATH             LINE    PYTEAL
+#pragma version 8    //    smart_contracts/lab.py  29      HelloWorld()
+pushint 0 // 0       //
+return               //

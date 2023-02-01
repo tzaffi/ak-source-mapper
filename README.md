@@ -37,9 +37,46 @@ This project has been generated using AlgoKit. See below for default getting sta
 
 This project makes use of Python to build Algorand smart contracts. The following tools are in use:
 
-- [Poetry](https://python-poetry.org/): Python packaging and dependency management.- [Black](https://github.com/psf/black): A Python code formatter.
+- [Poetry](https://python-poetry.org/): Python packaging and dependency management.
+- [Black](https://github.com/psf/black): A Python code formatter.
 - [Ruff](https://github.com/charliermarsh/ruff): An extremely fast Python linter.
 
 - [mypy](https://mypy-lang.org/): Static type checker.
 
 It has also been configured to have a productive dev experience out of the box in VS Code, see the [.vscode](./.vscode) folder.
+
+# Source Mapper
+How I got it to work
+
+```sh
+❯ python --version
+Python 3.11.1
+
+❯ poetry env use python
+```
+
+Update `pyproject.toml`:
+
+```toml
+[tool.poetry.dependencies]
+python = "^3.11"
+beaker-pyteal = {git = "https://github.com/tzaffi/beaker", branch = "source-map-b1"}
+```
+
+Then run the update command:
+
+```sh
+❯ poetry udpate
+...
+
+❯ poetry lock
+...
+```
+
+Make sure to have a sandbox running
+
+```sh
+❯ algokit sandbox start
+Starting the AlgoKit sandbox now...
+...
+```

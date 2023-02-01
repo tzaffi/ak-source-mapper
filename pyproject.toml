@@ -6,8 +6,8 @@ authors = ["Zeph Grunschlag <zeph@algorand.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-beaker-pyteal = "^0.5.0"
+python = "^3.11"
+beaker-pyteal = {git = "https://github.com/tzaffi/beaker", branch = "source-map-b1"}
 
 [tool.poetry.group.dev.dependencies]
 pip-audit = "^2.4.5"
